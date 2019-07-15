@@ -2,16 +2,21 @@ package Queue
 import scala.io
 import scala.io.StdIn
 import Queue.QueueOperation
+import Queue.SquareQueue
 
 class DoubleQueue {
-  var doub1=new DoubleQueue
+  def doubleNum(num:Int): Int ={
+    val total=num+num
+    dq1.enqueue(total,list)
+  }
 
   def main(args: Array[String]): Unit = {
+
+    var dq1=new DoubleQueue()
+
     var list=List(1,2,3,4,5)
+
     val length=list.length
-    val choice = StdIn.readLine("Your Choice: ")
-    choice match{
-      case 1 => doub1.
+    dq1.DoubleNum(5)
     }
   }
-}
